@@ -49,7 +49,7 @@ public class Rocket : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space))
         {
-            _rigidbody.AddRelativeForce(Vector3.up * mainThrust);
+            _rigidbody.AddRelativeForce(Vector3.up * mainThrustThisFrame);
 
             if (!_audioSource.isPlaying)
                 _audioSource.Play();
